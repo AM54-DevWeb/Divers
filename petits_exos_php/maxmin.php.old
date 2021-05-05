@@ -1,0 +1,34 @@
+<?php
+
+if(isset($_POST["maxmin1"])){
+    $maxmin=$_POST["maxmin"];
+    $max=1000;
+    $min=0;
+}
+
+    if($maxmin<0){
+
+        echo "Le nombre doit etre compris entre 0 et 1000";
+    }
+
+    if($maxmin>1000){
+        echo "Le nombre doit etre compris entre 0 et 1000";
+    }
+
+    elseif($max>$maxmin){
+        $max=$maxmin;
+    }
+
+    elseif($min<$maxmin){
+        $min=$maxmin;
+        
+    }
+
+
+
+    echo "<br /> $max";
+    echo "<br /> $min";
+
+
+
+?>
