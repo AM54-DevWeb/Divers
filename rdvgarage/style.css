@@ -1,0 +1,29 @@
+body{
+    background-image: url(https://www.wallpapertip.com/wmimgs/32-324965_polished-chrome-metal-texture-background-related-keywords-brushed.jpg);
+}
+
+fieldset{
+    background-image: url(https://zupimages.net/up/21/06/m3qi.jpg);
+    border: ridge 2px tomato;
+}
+
+legend{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgb(100, 95, 95);
+}
+
+.rdv{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 90px;
+    display: inline-block;
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 50px;
+    display: inline-block;
+}
