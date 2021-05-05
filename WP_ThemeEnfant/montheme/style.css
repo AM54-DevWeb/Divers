@@ -1,0 +1,166 @@
+/*
+Theme Name: myChild
+Theme URI: https://woocommerce.com/myChild/
+Author URI: AM54
+Description: TP Thème enfant du thème Storefront
+Template: Storefront
+version:1
+Text Domain: myChild
+*/
+
+@font-face{
+    font-family: "Berkshire Swasch";
+    src: url("./fonts/BerkshireSwash-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Tangerine";
+    src: url("./fonts/Tangerine-Regular.ttf"),
+        url("./fonts/Tangerine-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Fauna One";
+    src: url("./fonts/FaunaOne-Regular.ttf");
+}
+
+html, body{
+    font-family: "Fauna One" !important;
+}
+
+.menu{
+    font-family:"Berkshire Swasch" !important;
+}
+
+.woocommerce-loop-product__title{
+    font-family:"Berkshire Swasch" !important;
+}
+
+.site-header{
+    background-color: grey;
+    border-bottom: 5px solid grey;
+}
+
+.site-footer{
+    background-color: grey;
+}
+
+#page{
+    background-color: darkgrey !important;
+}
+
+.menu > ul > li > a{
+
+color: rgb(90, 3, 90);
+}
+
+.woocommerce-info{
+    background-color:rgb(207, 207, 25) !important;
+    border-left-color: rgb(90, 3, 90);
+}
+
+.wp-block-image > figure > .wp-image-31{
+    border-radius: 10%;
+}
+
+.wp-block-image > figure > .wp-image-29{
+    border-radius: 15px;
+    border: 1px solid rgb(90, 3, 90);
+}
+
+.wp-block-image .aligncenter>figcaption{
+    color:rgb(207, 207, 25) !important;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: "Tangerine" !important;
+}
+
+.woocommerce-Price-amount{
+    color: rgb(207, 207, 25) !important;
+}
+
+button{
+    background-color:rgb(90, 3, 90) !important;
+}
+
+.px_cart_prdt>div>a{
+    background-color:rgb(90, 3, 90) !important;
+    color: rgb(207, 207, 25) !important;
+}
+
+.mes_prdt{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.px_cart_prdt{
+    display: flex;
+    margin-top: 5% !important;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 1.1em;
+    justify-content: center;
+}
+
+.px_cart_prdt>a{
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+.px_cart_prdt>div{
+    text-align: center;
+}
+
+.px_cart_prdt>div>.button{
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.textBoutique{
+    margin-top: 20%;
+}
+
+hr{
+    width: 65%;
+    margin: 50px auto;
+}
+
+.wpforms-submit {
+    color: rgb(207, 207, 25) !important;
+}
+
+.count{
+    color: rgb(90, 3, 90) !important;
+}
+
+.site-header-cart .cart-contents:after{
+    color: rgb(90, 3, 90) !important;
+}
+
+.widget_product_categories ul li:before{
+    color: rgb(207, 207, 25) !important;
+}
+
+.widget-area .widget a{
+    color: rgb(90, 3, 90) !important;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message, .woocommerce-noreviews, p.no-comments .woocommerce{
+    background-color:  rgb(90, 3, 90) !important;
+}
+
+.button{
+    color: rgb(207, 207, 25) !important;
+}
+
+.titreBoutique{
+    margin-top: 5%;
+    margin-left: 45%;
+    position: absolute;
+    color: rgb(90, 3, 90) !important;
+    text-shadow: 1px 3px 5px rgb(207, 207, 25) !important;
+    font-weight: 900;
+    font-size: 3.5em;
+}
