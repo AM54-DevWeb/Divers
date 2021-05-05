@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  html{
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover{
+    color: rgba(241, 180, 13, 0.89);
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5S;
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: rgba(241, 180, 13, 0.89);
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 20%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 80%;
+      text-align: end;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(50vh - 50px);
+      overflow-y: auto;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+    }
+  }
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.main{
+    max-width:4096px;
+    margin:0 auto;
+    position:relative;
+    min-height:100%;
+    margin-top: 50px;
+    background-image: url(20.jpg);
+}
+
+section{
+    color: rgb(255, 196, 0);
+    text-shadow: black 1px 1px 1px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    padding: 10px 5px 5px 15px;
+    background-color: #4d4d4d;
+    bottom: -50px;
+    position: absolute;
+    display: inline-flex;
+}
+
+#accueil > a{    
+    text-decoration: none;
+    color: #efefef;
+}
+
+#scrollUp{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.7;
+    align-self: center;
+    border: rgb(236, 128, 3) solid 5px;
+    border-radius: 50%;
+}
+
+
+
+/* STYLE RDV */
+
+.field{
+  background-image: url(https://zupimages.net/up/21/06/m3qi.jpg);
+  border: ridge 2px  rgba(241, 180, 13, 0.89);
+  display:inline-block;
+  width: 60%;
+  text-align: center;
+  padding: 1%;
+  /*float: left;*/
+}
+
+.legrdv{
+  color: rgb(255, 187, 0);
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgb(100, 95, 95);
+}
+
+.rdv{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 100px;
+  display:inline-block;
+}
+.rdv2{
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  width: 150px;
+}
+
+label{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 55px;
+}
+
+.envoyer{
+      color: #855104;
+      background: linear-gradient(rgba(255, 251, 0, 0.808), rgba(241, 180, 13, 0.89),rgba(255, 166, 0, 0.911));
+      margin: 5px;
+}
+
+.remisezero {
+  color: #855104;
+  background: linear-gradient(rgba(255, 251, 0, 0.808), rgba(241, 180, 13, 0.89),rgba(255, 166, 0, 0.911));
+  margin: 5px;
+}
+
+form{
+  text-align: center;
+}
+
+.civ2{
+  display: inline-block;
+}
+
+.space{
+  margin: 50px;
+}
+
+.com{
+  display: inline-block;
+  width: 95%;
+}
+
+/*portfolio*/
+
+.space{
+  margin: 20px;
+}
+
+.portfolio{
+  text-align: center;
+  justify-content: center;
+}
+
+.projets{
+  display:flex;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+.titrePortfolio{
+  font-size: 38px;
+  font-weight: bold;
+  font-family:cursive;
+  text-align: center;
+  color: rgb(255, 187, 0);
+  text-shadow: darkorange 1px 1px;
+}
+
+.pPortfolio{
+  font-size: 20px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.fieldPortfolio{
+  display: inline-block;
+  background-image: url(https://zupimages.net/up/21/06/m3qi.jpg);
+  border: ridge 2px  rgba(241, 180, 13, 0.89);
+  margin: 5%;
+  padding: 1%;
+  width: 100%;
+}
+
+.portProjet1{
+
+}
+
+.portProjet2{
+
+}
+
+.portProjet3{
+
+}
+
+.portProjet4{
+
+}
+
+.projet1legend{
+
+}
+
+.projet2legend{
+
+}
+
+.projet3legend{
+
+}
+
+.projet4legend{
+
+}
+
+.sectionProjet{
+  width: 250px;
+}
+
+.titreProjet{
+  color: rgb(255, 187, 0);
+  text-align: center;
+  text-shadow: 1PX 1PX black;
+  font-size: 25px;
+}
+
+.projetlabel{
+  color: floralwhite;
+}
+
+/*footer*/
+
+.footer{
+  width: 100%;
+  height: 50px;
+  padding: 10px 5px 5px 15px;
+  background-color: #4d4d4d;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer > a{    
+  text-decoration: none;
+  color: #efefef;
+}
+
+/* index */
+
+.formulaireInput {
+  color:rgba(53, 51, 51, 0.801);
+  font-family:inherit;
+  font-weight: bold;
+  border-color: #525252;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 35px;
+  width: 250px;
+}
+
+.formulaire { 
+  margin: 50px;
+  display: flex;
+  height: 340PX;
+}
+
+.form1 {
+  float: left;
+  border: 5px ridge  rgb(255, 187, 0);
+  margin: 0px;
+  background-image: url(https://zupimages.net/up/21/06/m3qi.jpg);
+}
+
+.champ {
+  color: #ff0040;
+  font-style: italic;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.NomPrenom {
+  color: #ffffffec;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.valider {
+  color: #855104;
+  background: linear-gradient(rgba(255, 251, 0, 0.808), rgba(241, 180, 13, 0.89),rgba(255, 166, 0, 0.911));
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.valider:hover{
+  color: azure;
+  padding: 8px;
+  transition: all 0.3s;
+}
