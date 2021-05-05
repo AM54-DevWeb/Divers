@@ -1,0 +1,9 @@
+body{
+    background-color: darkgray;
+    color: white;
+}
+
+body.connecte{
+    background-color: pink;
+    color: red;
+}
